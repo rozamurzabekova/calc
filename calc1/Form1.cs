@@ -17,15 +17,30 @@ namespace calc1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Calculate(object sender, EventArgs e)
         {
             string firstValue = textBox1.Text;
             string secondValue = textBox2.Text;
-            int first = Convert.ToInt32(firstValue);
-            int second = Convert.ToInt32(secondValue);
-            int third = first + second;
+            double first = Convert.ToDouble(firstValue);
+            double second = Convert.ToDouble(secondValue);
+            double third = 0;
+            switch (((Button)sender).Text)
+            {
+                case "+":
+                    third = first + second;
+                    break;
+                case "-":
+                    third = first - second;
+                    break;
+                case "*":
+                    third = first * second;
+                    break;
+                case "/":
+                    third = first / second;
+                    break;
+            }
             rez.Text = third.ToString();
-
         }
     }
 }
+
