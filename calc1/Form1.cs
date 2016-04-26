@@ -23,23 +23,10 @@ namespace calc1
             string secondValue = textBox2.Text;
             double first = Convert.ToDouble(firstValue);
             double second = Convert.ToDouble(secondValue);
-            double third = 0;
-            switch (((Button)sender).Text)
-            {
-                case "+":
-                    third = first + second;
-                    break;
-                case "-":
-                    third = first - second;
-                    break;
-                case "*":
-                    third = first * second;
-                    break;
-                case "/":
-                    third = first / second;
-                    break;
-            }
-            rez.Text = third.ToString();
+            double third;
+            ICalculate calculate = Calculaterfactory.CreatCalculator(((Button) sender).Text);
+            third = calculate.Calculate(first, second);
+            Rez.Text = third.ToString();
         }
     }
 }
