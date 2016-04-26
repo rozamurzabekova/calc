@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace calc1
+namespace calc1.twoOper
 {
     public static class Calculaterfactory
     {
@@ -12,13 +8,13 @@ namespace calc1
         {
             switch (name)
             {
-                case "+":
+                case "plus":
                     return new Add();
-                case "-":
+                case "minus":
                     return new Subtraction();
-                case "*":
+                case "mul":
                     return new Multiplication();
-                case "/":
+                case "div":
                     return new Division();
                 default:
                     throw new ArgumentException("Неизвестная операция", "name");

@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using calc1.oneOper;
 
-namespace calc1
+namespace calc1.twoOper
 {
     public static class SingleFactory
     {
-        public static ISingleCalculator CreatCalculator(string name)
+        public static ISingleCalculator CreateCalculator(string name)
         {
             switch (name)
             {
@@ -16,6 +13,10 @@ namespace calc1
                     return new SinCalculator();
                 case "cos":
                     return new CosCalculator();
+                case "log":
+                    return new LogCalculator();
+                case "tan":
+                    return new LogCalculator();
                 default:
                     throw new ArgumentException("Неизвестная операция", "name");
             }

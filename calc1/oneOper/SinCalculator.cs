@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using calc1.twoOper;
 
-namespace calc1
+namespace calc1.oneOper
 {
     class SinCalculator : ISingleCalculator
     {

@@ -1,4 +1,4 @@
-﻿namespace calc1
+﻿namespace calc1.twoOper
 {
     public class Multiplication: ICalculate
     {
