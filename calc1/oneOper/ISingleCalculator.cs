@@ -1,4 +1,4 @@
-﻿namespace calc1.twoOper
+﻿namespace calc1.oneOper
 {
      public interface ISingleCalculator
     {

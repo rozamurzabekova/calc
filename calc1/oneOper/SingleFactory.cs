@@ -1,7 +1,6 @@
 ﻿using System;
-using calc1.oneOper;
 
-namespace calc1.twoOper
+namespace calc1.oneOper
 {
     public static class SingleFactory
     {
@@ -10,13 +9,13 @@ namespace calc1.twoOper
             switch (name)
             {
                 case "sin":
-                    return new SinCalculator();
+                    return new Sin();
                 case "cos":
-                    return new CosCalculator();
+                    return new Cos();
                 case "log":
-                    return new LogCalculator();
+                    return new Log();
                 case "tan":
-                    return new LogCalculator();
+                    return new Tan();
                 default:
                     throw new ArgumentException("Неизвестная операция", "name");
             }

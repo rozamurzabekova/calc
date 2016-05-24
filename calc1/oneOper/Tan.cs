@@ -3,11 +3,11 @@ using calc1.twoOper;
 
 namespace calc1.oneOper
 {
-    class LogCalculator : ISingleCalculator
+   public class Tan : ISingleCalculator
     {
         public double Calculate(double first)
         {
-            return Math.Log(first);
+            return Math.Tan(first);
         }
     }
 }

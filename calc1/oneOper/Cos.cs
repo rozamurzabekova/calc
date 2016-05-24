@@ -1,9 +1,8 @@
 ﻿using System;
-using calc1.twoOper;
 
 namespace calc1.oneOper
 {
-    class CosCalculator : ISingleCalculator
+    public class Cos : ISingleCalculator
     {
         public double Calculate(double first)
         {
